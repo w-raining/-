@@ -1,0 +1,27 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@gxt.app
+    DocumentRoot "D:/gxt/public"
+    ServerName f1.gxt.com
+    ServerAlias *.f1.gxt.com
+    ErrorLog "logs/gxt.app-error.log"
+    CustomLog "logs/gxt.app-access.log" common
+</VirtualHost>
+httpd-vhosts.conf
+
+<Directory "D:/gxt">
+    AllowOverride All
+     Options Indexes FollowSymLinks Includes ExecCGI
+    Require all granted
+</Directory>
+httpd.conf
+在 <Directory> blocks below.这个的下面
+
+
+
+C:\Windows\System32\drivers\etc
+127.0.0.1    f1.red.com
+127.0.0.1    f1.gxt.com
+127.0.0.1    steel.com
+127.0.0.1    stock_game.com
+127.0.0.1    gxt_wx.com
+127.0.0.1    red.gxt.com
